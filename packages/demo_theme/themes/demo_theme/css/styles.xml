@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Header">
+        <style name="Background" variable="header-background" type="color" />
+        <style name="h1Background" variable="header-h1background" type="color" />
+		<style name="h1Tag" variable="h1" type="type" />
+    </set>
+    <set name="Footer">
+        <style name="Background" variable="footer-background" type="color" />
+    </set>
+    <set name="Contant">
+        <style name="Background" variable="contant-background" type="color" />
+		<style name="Padding" variable="contant-padding" type="size"/>
+    </set>
+    <set name="LeftSidebar">
+        <style name="Background" variable="leftsidebar-background" type="color" />
+    </set>
+    <set name="RightSidebar">
+        <style name="Background" variable="rightsidebar-background" type="color" />
+    </set>
+
+
+</styles>

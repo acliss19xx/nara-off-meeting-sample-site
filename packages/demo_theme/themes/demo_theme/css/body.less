@@ -1,0 +1,43 @@
+@main-height:300px;
+
+header{
+	background-color:@header-background-color;
+}
+
+header h1{
+	min-height:100px;
+	background-color:@header-h1background-color;
+	font-family:@h1-type-font-family;
+	font-size:@h1-type-font-size;
+	color:@h1-type-color;
+	padding:10px;
+}
+
+main{
+	min-height:@main-height;
+	background-color:@contant-background-color;
+    .contant{
+	   padding:@contant-padding-size;
+    }
+
+}
+
+
+.left-side{
+	min-height:@main-height;
+	background-color:@leftsidebar-background-color;
+}
+
+.right-side{
+	min-height:@main-height;
+	background-color:@rightsidebar-background-color;
+}
+
+ul li a{
+    color:@h1-type-color;
+}
+
+footer{
+	min-height:50px;
+	background-color:@footer-background-color;
+}

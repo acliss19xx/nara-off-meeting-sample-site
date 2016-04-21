@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<concrete5-cif version="1.0">
+  <pagetypes>
+    <pagetype name="Page" handle="page" package="" launch-in-composer="0" is-frequently-added="1">
+      <pagetemplates type="all" default="full"/>
+      <target handle="all" package="" form-factor=""/>
+      <composer>
+        <formlayout>
+          <set name="Basics" description="">
+            <control custom-template="" required="1" custom-label="Page Name" description="" type="core_page_property" handle="name"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="description"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="url_slug"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="page_template"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="publish_target"/>
+          </set>
+          <set name="Content" description="">
+            <control custom-template="" custom-label="Body" description="" output-control-id="cK8D2w7F" type="block" handle="content"/>
+          </set>
+        </formlayout>
+        <output>
+          <pagetemplate handle="a_full">
+          <page name="" path="" filename="" pagetype="page" template="a_full" user="admin" description="" package=""/>
+          </pagetemplate>
+          <pagetemplate handle="a_leftsidebar">
+          <page name="" path="" filename="" pagetype="page" template="a_leftsidebar" user="admin" description="" package=""/>
+          </pagetemplate>
+          <pagetemplate handle="a_rightsidebar">
+          <page name="" path="" filename="" pagetype="page" template="a_rightsidebar" user="admin" description="" package=""/>
+          </pagetemplate>
+          <pagetemplate handle="full">
+          <page name="" path="" filename="" pagetype="page" template="full" user="admin" description="" package="">
+          <area name="Main">
+            <blocks>
+              <block type="core_page_type_composer_control_output" name="" mc-block-id="jPjHKYV0">
+                <control output-control-id="cK8D2w7F"/>
+              </block>
+            </blocks>
+          </area>
+          </page>
+          </pagetemplate>
+          <pagetemplate handle="right_sidebar">
+          <page name="" path="" filename="" pagetype="page" template="right_sidebar" user="admin" description="" package=""/>
+          </pagetemplate>
+          <pagetemplate handle="left_sidebar">
+          <page name="" path="" filename="" pagetype="page" template="left_sidebar" user="admin" description="" package="">
+          <area name="Hero Area">
+            <blocks/>
+          </area>
+          <area name="Page Header">
+            <blocks/>
+          </area>
+          <area name="Main">
+            <blocks/>
+          </area>
+          <area name="Page Footer">
+            <blocks/>
+          </area>
+          </page>
+          </pagetemplate>
+        </output>
+      </composer>
+    </pagetype>
+    <pagetype name="先生用お知らせ詳細ページ" handle="teacher" package="" launch-in-composer="1" is-frequently-added="1">
+      <pagetemplates type="custom" default="full">
+      <pagetemplate handle="full"/>
+      </pagetemplates>
+      <target handle="parent_page" package="" path="/157"/>
+      <composer>
+        <formlayout>
+          <set name="基本設定" description="">
+            <control custom-template="" required="1" custom-label="" description="" type="core_page_property" handle="name"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="url_slug"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="description"/>
+          </set>
+          <set name="記事" description="">
+            <control custom-template="" custom-label="" description="" output-control-id="Elqec2SI" type="block" handle="content"/>
+          </set>
+        </formlayout>
+        <output>
+          <pagetemplate handle="full">
+          <page name="" path="" filename="" pagetype="teacher" template="full" user="admin" description="" package="">
+          <area name="Main">
+            <blocks>
+              <block type="core_page_type_composer_control_output" name="" mc-block-id="NKBp1FoA">
+                <control output-control-id="Elqec2SI"/>
+              </block>
+            </blocks>
+          </area>
+          <area name="Footer">
+            <blocks>
+              <block type="page_list" name="" mc-block-id="OCs9wWb4">
+                <data table="btPageList">
+                  <record>
+                    <num><![CDATA[0]]></num>
+                    <orderBy><![CDATA[display_asc]]></orderBy>
+                    <cParentID/>
+                    <cThis><![CDATA[0]]></cThis>
+                    <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                    <buttonLinkText><![CDATA[]]></buttonLinkText>
+                    <pageListTitle><![CDATA[]]></pageListTitle>
+                    <filterByRelated><![CDATA[0]]></filterByRelated>
+                    <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                    <filterDateOption><![CDATA[]]></filterDateOption>
+                    <filterDateDays><![CDATA[0]]></filterDateDays>
+                    <filterDateStart><![CDATA[]]></filterDateStart>
+                    <filterDateEnd><![CDATA[]]></filterDateEnd>
+                    <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                    <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                    <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                    <includeName><![CDATA[1]]></includeName>
+                    <includeDescription><![CDATA[1]]></includeDescription>
+                    <includeDate><![CDATA[0]]></includeDate>
+                    <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                    <paginate><![CDATA[0]]></paginate>
+                    <displayAliases><![CDATA[0]]></displayAliases>
+                    <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                    <ptID>{ccm:export:pagetype:teacher}</ptID>
+                    <pfID/>
+                    <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                    <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                    <noResultsMessage><![CDATA[]]></noResultsMessage>
+                    <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                    <truncateChars><![CDATA[0]]></truncateChars>
+                  </record>
+                </data>
+              </block>
+            </blocks>
+          </area>
+          </page>
+          </pagetemplate>
+        </output>
+      </composer>
+    </pagetype>
+    <pagetype name="生徒用お知らせ詳細ページ" handle="student" package="" launch-in-composer="1" is-frequently-added="1">
+      <pagetemplates type="custom" default="right_sidebar">
+      <pagetemplate handle="right_sidebar"/>
+      </pagetemplates>
+      <target handle="parent_page" package="" path="/156"/>
+      <composer>
+        <formlayout>
+          <set name="基本設定" description="">
+            <control custom-template="" required="1" custom-label="" description="" type="core_page_property" handle="name"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="url_slug"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="description"/>
+          </set>
+          <set name="記事" description="">
+            <control custom-template="" custom-label="" description="" output-control-id="wnU5lPXk" type="block" handle="content"/>
+          </set>
+        </formlayout>
+        <output>
+          <pagetemplate handle="right_sidebar">
+          <page name="" path="" filename="" pagetype="student" template="right_sidebar" user="admin" description="" package="">
+          <area name="Main">
+            <blocks>
+              <block type="core_page_type_composer_control_output" name="" mc-block-id="K9iHDFkH">
+                <control output-control-id="wnU5lPXk"/>
+              </block>
+            </blocks>
+          </area>
+          <area name="Sidebar">
+            <blocks>
+              <block type="page_list" name="" mc-block-id="lS82acwe">
+                <data table="btPageList">
+                  <record>
+                    <num><![CDATA[0]]></num>
+                    <orderBy><![CDATA[display_asc]]></orderBy>
+                    <cParentID/>
+                    <cThis><![CDATA[0]]></cThis>
+                    <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                    <buttonLinkText><![CDATA[]]></buttonLinkText>
+                    <pageListTitle><![CDATA[]]></pageListTitle>
+                    <filterByRelated><![CDATA[0]]></filterByRelated>
+                    <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                    <filterDateOption><![CDATA[]]></filterDateOption>
+                    <filterDateDays><![CDATA[0]]></filterDateDays>
+                    <filterDateStart><![CDATA[]]></filterDateStart>
+                    <filterDateEnd><![CDATA[]]></filterDateEnd>
+                    <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+                    <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+                    <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                    <includeName><![CDATA[1]]></includeName>
+                    <includeDescription><![CDATA[1]]></includeDescription>
+                    <includeDate><![CDATA[0]]></includeDate>
+                    <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+                    <paginate><![CDATA[0]]></paginate>
+                    <displayAliases><![CDATA[0]]></displayAliases>
+                    <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                    <ptID>{ccm:export:pagetype:student}</ptID>
+                    <pfID/>
+                    <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                    <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                    <noResultsMessage><![CDATA[]]></noResultsMessage>
+                    <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                    <truncateChars><![CDATA[0]]></truncateChars>
+                  </record>
+                </data>
+              </block>
+            </blocks>
+          </area>
+          <area name="Footer">
+            <blocks/>
+          </area>
+          </page>
+          </pagetemplate>
+        </output>
+      </composer>
+    </pagetype>
+    <pagetype name="保護者用お知らせ詳細ページ" handle="guardian" package="" launch-in-composer="1" is-frequently-added="1">
+      <pagetemplates type="custom" default="left_sidebar">
+      <pagetemplate handle="left_sidebar"/>
+      </pagetemplates>
+      <target handle="parent_page" package="" path="/155"/>
+      <composer>
+        <formlayout>
+          <set name="基本設定" description="">
+            <control custom-template="" required="1" custom-label="" description="" type="core_page_property" handle="name"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="url_slug"/>
+            <control custom-template="" custom-label="" description="" type="core_page_property" handle="description"/>
+          </set>
+          <set name="記事" description="">
+            <control custom-template="" custom-label="" description="" output-control-id="Z1xQqQjh" type="block" handle="content"/>
+          </set>
+        </formlayout>
+        <output>
+          <pagetemplate handle="left_sidebar">
+          <page name="" path="" filename="" pagetype="guardian" template="left_sidebar" user="admin" description="" package="">
+          <area name="Sidebar">
+            <blocks/>
+          </area>
+          <area name="Main">
+            <blocks/>
+          </area>
+          <area name="Footer">
+            <blocks/>
+          </area>
+          </page>
+          </pagetemplate>
+        </output>
+      </composer>
+    </pagetype>
+  </pagetypes>
+  <pagetemplates>
+    <pagetemplate icon="full.png" name="Full" handle="full" package="" internal=""/>
+    <pagetemplate icon="right_sidebar.png" name="Right Sidebar" handle="right_sidebar" package="demo_theme" internal=""/>
+    <pagetemplate icon="left_sidebar.png" name="Left Sidebar" handle="left_sidebar" package="demo_theme" internal=""/>
+  </pagetemplates>
+
+  <themes>
+    <theme handle="demo_theme" package="demo_theme" activated="1"/>
+  </themes>
+	<stacks>
+    <stack name="Header Navigation" type="global_area">
+      <area name="Main">
+        <blocks>
+          <block type="autonav" name="" custom-template="breadcrumb.php">
+            <data table="btNavigation">
+              <record>
+                <orderBy><![CDATA[display_asc]]></orderBy>
+                <displayPages><![CDATA[top]]></displayPages>
+                <displayPagesCID/>
+                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                <displaySubPages><![CDATA[none]]></displaySubPages>
+                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                <displaySystemPages><![CDATA[0]]></displaySystemPages>
+              </record>
+            </data>
+          </block>
+        </blocks>
+      </area>
+    </stack>
+	</stacks>
+  <pages>
+    <page name="全体の通知" path="/164" filename="" pagetype="page" template="full" user="admin" description="" package="">
+    <attributes>
+      <attributekey handle="exclude_page_list">
+        <value><![CDATA[1]]></value>
+      </attributekey>
+    </attributes>
+    <area name="Main">
+      <blocks>
+        <block type="page_list" name="" custom-template="pagetype">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[chrono_desc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[学校全体の通知]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID/>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="先生用トップページ" path="/157" filename="" pagetype="page" template="full" user="admin" description="" package="">
+    <attributes>
+      <attributekey handle="exclude_page_list">
+        <value><![CDATA[1]]></value>
+      </attributekey>
+    </attributes>
+    <area name="Main">
+      <blocks>
+        <block type="page_list" name="" custom-template="pagetype">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID>{ccm:export:page:/157}</cParentID>
+              <cThis><![CDATA[1]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID/>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="保護者用トップページ" path="/155" filename="" pagetype="page" template="full" user="admin" description="" package="">
+    <attributes>
+      <attributekey handle="exclude_page_list">
+        <value><![CDATA[1]]></value>
+      </attributekey>
+    </attributes>
+    <area name="Main">
+      <blocks>
+        <block type="page_list" name="" custom-template="pagetype">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID>{ccm:export:page:/155}</cParentID>
+              <cThis><![CDATA[1]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:guardian}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="生徒用トップページ" path="/156" filename="" pagetype="page" template="full" user="admin" description="" package="">
+    <attributes>
+      <attributekey handle="exclude_page_list">
+        <value><![CDATA[1]]></value>
+      </attributekey>
+    </attributes>
+    <area name="Main">
+      <blocks>
+        <block type="page_list" name="" custom-template="pagetype">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID>{ccm:export:page:/156}</cParentID>
+              <cThis><![CDATA[1]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:student}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="contant">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="Home" path="" filename="" pagetype="" template="full" user="admin" description="" package="">
+    <attributes>
+      <attributekey handle="exclude_page_list">
+        <value><![CDATA[1]]></value>
+      </attributekey>
+    </attributes>
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>学校で出した通知文を閲覧できるサイトです。</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="contant">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="運動会の実施について" path="/155/158" filename="" pagetype="guardian" template="left_sidebar" user="admin" description="運動会当日は、学校周辺に駐車しないでください" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>近所迷惑ですので、学校近くには駐車しないでください</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Sidebar">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:guardian}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="音楽発表会の実施について" path="/155/159" filename="" pagetype="guardian" template="left_sidebar" user="admin" description="学校周辺は静かに歩いてください" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>近所迷惑になりますので、学校周辺では静かに歩いてください</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Sidebar">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:guardian}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="中間テストについて" path="/156/160" filename="" pagetype="student" template="right_sidebar" user="admin" description="みんないい点とりましょう" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>みんな、内申書にひびくので、ちゃんと授業を受けて、テストでいい点を取りましょう</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Sidebar">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:student}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="給食について" path="/156/161" filename="" pagetype="student" template="right_sidebar" user="admin" description="給食を再開します。" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>給食を再開します。</p><p>みんな仲良く食べましょう</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Sidebar">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:student}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Footer">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks/>
+    </area>
+    </page>
+    <page name="人事異動について" path="/157/162" filename="" pagetype="teacher" template="full" user="admin" description="教職員の異動を発表します。" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>校長が退職されたので、教頭先生が校長になりました。</p><p>産休の吉田先生に代わり、田中先生が新任で3年2組を担当することになりました。</p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:teacher}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Sidebar">
+      <blocks/>
+    </area>
+    <area name="Footer">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:teacher}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    </page>
+    <page name="登下校の見回りについて" path="/157/163" filename="" pagetype="teacher" template="full" user="admin" description="登下校の見回り" package="">
+    <area name="Main">
+      <blocks>
+        <block type="content" name="">
+          <data table="btContentLocal">
+            <record>
+              <content><![CDATA[<p>それぞれ下記の地点での見回りよろしくお願いします。</p><p>佐藤先生はA地点へ</p><p>武田先生はB地点へ</p><p>高橋先生はC地点へ</p><p><br></p>]]></content>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Page Header">
+      <blocks/>
+    </area>
+    <area name="Page Footer">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[0]]></includeDescription>
+              <includeDate><![CDATA[1]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:teacher}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    <area name="Footer">
+      <blocks>
+        <block type="page_list" name="">
+          <data table="btPageList">
+            <record>
+              <num><![CDATA[0]]></num>
+              <orderBy><![CDATA[display_asc]]></orderBy>
+              <cParentID/>
+              <cThis><![CDATA[0]]></cThis>
+              <useButtonForLink><![CDATA[0]]></useButtonForLink>
+              <buttonLinkText><![CDATA[]]></buttonLinkText>
+              <pageListTitle><![CDATA[]]></pageListTitle>
+              <filterByRelated><![CDATA[0]]></filterByRelated>
+              <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+              <filterDateOption><![CDATA[]]></filterDateOption>
+              <filterDateDays><![CDATA[0]]></filterDateDays>
+              <filterDateStart><![CDATA[]]></filterDateStart>
+              <filterDateEnd><![CDATA[]]></filterDateEnd>
+              <relatedTopicAttributeKeyHandle><![CDATA[]]></relatedTopicAttributeKeyHandle>
+              <customTopicAttributeKeyHandle><![CDATA[]]></customTopicAttributeKeyHandle>
+              <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+              <includeName><![CDATA[1]]></includeName>
+              <includeDescription><![CDATA[1]]></includeDescription>
+              <includeDate><![CDATA[0]]></includeDate>
+              <includeAllDescendents><![CDATA[0]]></includeAllDescendents>
+              <paginate><![CDATA[0]]></paginate>
+              <displayAliases><![CDATA[0]]></displayAliases>
+              <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+              <ptID>{ccm:export:pagetype:teacher}</ptID>
+              <pfID/>
+              <truncateSummaries><![CDATA[0]]></truncateSummaries>
+              <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+              <noResultsMessage><![CDATA[]]></noResultsMessage>
+              <displayThumbnail><![CDATA[0]]></displayThumbnail>
+              <truncateChars><![CDATA[0]]></truncateChars>
+            </record>
+          </data>
+        </block>
+      </blocks>
+    </area>
+    </page>
+  </pages>
+</concrete5-cif>
